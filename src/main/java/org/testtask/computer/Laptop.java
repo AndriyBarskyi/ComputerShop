@@ -15,10 +15,8 @@ import org.testtask.computer.component.VideoCard;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
 @Getter
 public class Laptop extends Computer {
     private final Display display;
@@ -49,5 +47,12 @@ public class Laptop extends Computer {
             + getDisplay().getDiagonal() + " inches\n"
             + getBattery().getCapacityInMAh() + "mAh\n"
             + "price: " + calculatePrice() + "$";
+    }
+
+    @Override public String toString() {
+        return "Laptop:\n" +
+            super.toString()
+            + display + battery +
+            "price: " + calculatePrice() + "$";
     }
 }

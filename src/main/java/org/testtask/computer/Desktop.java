@@ -17,7 +17,6 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 @Getter
 public class Desktop extends Computer {
@@ -49,5 +48,12 @@ public class Desktop extends Computer {
             + getACase().getColor() + "\n"
             + getPowerSupply().getWattage() + "W\n"
             + "price: " + calculatePrice() + "$";
+    }
+
+    @Override public String toString() {
+        return "Desktop Computer:\n" +
+            super.toString() +
+            aCase + powerSupply +
+            "price: "+ calculatePrice() + "$";
     }
 }

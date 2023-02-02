@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class CPU extends Component {
     private final Integer cores;
@@ -23,5 +22,13 @@ public class CPU extends Component {
         this.cores = cores;
         this.threads = threads;
         this.memorySpeedInGHz = memorySpeedInGHz;
+    }
+
+    @Override public String toString() {
+        return "CPU: " +
+            super.toString() +
+            "cores: " + cores + ", " +
+            "threads: " + threads + ", " +
+            "memory speed: " + memorySpeedInGHz + "GHz\n";
     }
 }

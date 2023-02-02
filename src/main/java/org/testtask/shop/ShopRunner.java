@@ -66,7 +66,7 @@ public class ShopRunner implements Runnable {
                     break;
                 case INFO:
                     System.out.println(Command.INFO.responseText);
-                    String showProductId = reader.readLine();
+                    String showProductId = reader.readLine().trim();
                     showFullProductInfoById(showProductId);
                     break;
                 case BUY:
@@ -109,7 +109,7 @@ public class ShopRunner implements Runnable {
     }
 
     private boolean productExists(String productId) {
-        return ProductInfoSupplier.getComputerById(productId)
+        return ProductInfoSupplier.getComputerById(productId.toUpperCase())
             .isPresent();
     }
 }

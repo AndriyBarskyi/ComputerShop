@@ -5,10 +5,8 @@ import java.math.BigDecimal;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Battery extends Component {
     private final Integer capacityInMAh;
@@ -20,5 +18,13 @@ public class Battery extends Component {
         super(brand, model, priceInDollars);
         this.capacityInMAh = capacityInMAh;
         this.voltage = voltage;
+    }
+
+    @Override
+    public String toString() {
+        return "Battery: " +
+            super.toString() +
+            "capacity: " + capacityInMAh + "mAh, " +
+            "voltage: " + voltage + "V \n";
     }
 }

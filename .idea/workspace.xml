@@ -4,51 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e7610da-3482-417b-b8eb-ed6e3e6e3bf9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/BatteryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/CPUBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/CaseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/ComponentBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/DisplayBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/MotherboardBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/PowerSupplyBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/RAMBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/ROMBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/component/VideoCardBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/computer/ComputerBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/computer/DesktopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/computer/LaptopBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/builder/computer/MonoblockBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Monoblock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Battery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/CPU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Component.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Motherboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/OS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/PowerSupply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/RAM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/ROM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/VideoCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/shop/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/shop/ProductInfoSupplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/testtask/shop/ShopRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/testtask/AppTest.java" afterDir="false" />
+    <list default="true" id="0e7610da-3482-417b-b8eb-ed6e3e6e3bf9" name="Changes" comment="create main shop runner with commands and ProductInfoSupplier">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Desktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Monoblock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/Monoblock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Battery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/CPU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/CPU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Motherboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/Motherboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/PowerSupply.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/PowerSupply.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/RAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/RAM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/ROM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/ROM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/VideoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/testtask/computer/component/VideoCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,15 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.testtask.builder.component" />
@@ -130,8 +104,44 @@
       <workItem from="1675148714142" duration="6107000" />
       <workItem from="1675177150557" duration="9862000" />
       <workItem from="1675234352239" duration="46368000" />
-      <workItem from="1675317338330" duration="595000" />
+      <workItem from="1675317338330" duration="4948000" />
     </task>
+    <task id="LOCAL-00001" summary="create computer and component">
+      <created>1675318901201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675318901201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create computer and component child classes">
+      <created>1675319028287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675319028287</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create computer and component builders">
+      <created>1675319061848</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675319061848</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create computer and component builders implementations">
+      <created>1675319108672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675319108672</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create main shop runner with commands and ProductInfoSupplier">
+      <created>1675319185904</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675319185904</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,5 +157,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create computer and component" />
+    <MESSAGE value="create computer and component child classes" />
+    <MESSAGE value="create computer and component builders" />
+    <MESSAGE value="create computer and component builders implementations" />
+    <MESSAGE value="create main shop runner with commands and ProductInfoSupplier" />
+    <option name="LAST_COMMIT_MESSAGE" value="create main shop runner with commands and ProductInfoSupplier" />
   </component>
 </project>

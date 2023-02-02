@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class VideoCard extends Component {
     private final Float memorySizeInGb;
@@ -20,5 +19,11 @@ public class VideoCard extends Component {
         super(brand, model, priceInDollars);
         this.memorySizeInGb = memorySizeInGb;
         this.memoryBusWidthInBits = memoryBusWidthInBits;
+    }
+
+    @Override public String toString() {
+        return super.toString() +
+            "memory size: " + memorySizeInGb + "Gb, " +
+            "memory bus width: " + memoryBusWidthInBits + "bits";
     }
 }

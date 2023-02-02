@@ -18,7 +18,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @EqualsAndHashCode(callSuper = true)
-@ToString(callSuper = true)
 @Getter
 public class Monoblock extends Computer {
     private final Display display;
@@ -49,5 +48,13 @@ public class Monoblock extends Computer {
             + getDisplay().getDiagonal() + " inches\n"
             + getPowerSupply().getWattage() + "W\n"
             + "price: " + calculatePrice() + "$";
+    }
+
+    @Override public String toString() {
+        return "Mono-block:\n" +
+            super.toString() +
+            display +
+            powerSupply +
+            "price: " + calculatePrice() + "$";
     }
 }

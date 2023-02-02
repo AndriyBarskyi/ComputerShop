@@ -5,10 +5,8 @@ import java.math.BigDecimal;
 import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Motherboard extends Component {
     private final Integer maxMemoryFrequencyInMHz;
@@ -25,5 +23,14 @@ public class Motherboard extends Component {
         this.maxRAMCapacityInGb = maxRAMCapacityInGb;
         this.socket = socket;
         this.memorySlots = memorySlots;
+    }
+
+    @Override public String toString() {
+        return "Motherboard: " +
+            super.toString() +
+            "max memory frequency: " + maxMemoryFrequencyInMHz + "MHz, " +
+            "max RAM capacity: " + maxRAMCapacityInGb + "Gb, " +
+            "socket: " + socket + ", " +
+            "memory slots: " + memorySlots + "\n";
     }
 }

@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class Case extends Component {
     private final String type;
@@ -24,5 +23,14 @@ public class Case extends Component {
         this.sizeInMm = sizeInMm;
         this.color = color;
         this.material = material;
+    }
+
+    @Override public String toString() {
+        return "Case: " +
+        super.toString() +
+            "type: " + type + ", " +
+            "size: " + sizeInMm + ", " +
+            "color: " + color + ", " +
+            "material: " + material + "\n";
     }
 }

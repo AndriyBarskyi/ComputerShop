@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class PowerSupply extends Component {
     private final Integer wattage;
@@ -22,5 +21,14 @@ public class PowerSupply extends Component {
         this.wattage = wattage;
         this.formFactor = formFactor;
         this.coolingMethod = coolingMethod;
+    }
+
+    @Override public String toString() {
+        return "PowerSupply: " +
+            super.toString() +
+            "wattage: " + wattage + "W, " +
+            "formFactor: " + formFactor + ", " +
+            "coolingMethod: " + coolingMethod +
+            '\n';
     }
 }

@@ -2,7 +2,6 @@ package org.testtask.computer;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 
 import org.testtask.computer.component.CPU;
 import org.testtask.computer.component.Component;
@@ -15,9 +14,7 @@ import org.testtask.computer.component.VideoCard;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.ToString;
 
-@ToString()
 @Getter
 @AllArgsConstructor
 @EqualsAndHashCode
@@ -54,17 +51,33 @@ public abstract class Computer {
             getCpu().getBrand() + " " +
             getCpu().getModel() + " " +
             getCpu().getMemorySpeedInGHz() + "GHz\n" +
-            getTotalRamCapacity().get() + "Gb RAM\n" +
+            getTotalRamCapacity() + "Gb RAM\n" +
             getRomList().stream()
-                .map(rom -> rom.getCapacityInGb() + "Gb " + rom.getType() + "\n")
-                .reduce((a, b) -> a + b).get() +
+                .map(
+                    rom -> rom.getCapacityInGb() + "Gb " + rom.getType() + "\n")
+                .reduce((a, b) -> a + b).orElse("") +
             getVideoCardList().stream().map(
                     v -> v.getBrand() + " " + v.getModel() + " "
                         + v.getMemorySizeInGb() + "Gb\n")
-                .reduce((a, b) -> a + b).get();
+                .reduce((a, b) -> a + b).orElse("");
     }
 
-    private Optional<Integer> getTotalRamCapacity() {
-        return ramList.stream().map(RAM::getCapacityInGb).reduce(Integer::sum);
+    private Integer getTotalRamCapacity() {
+        return ramList.stream().map(RAM::getCapacityInGb).reduce(Integer::sum)
+            .orElse(0);
+    }
+
+    @Override public String toString() {
+        return "id: " + id + ", \n" +
+            brand + " " +
+            model + ", \n" +
+            cpu +
+            "RAM: " + ramList +
+            "\nROM: " + romList +
+            "\nVideo memory: " + videoCardList +
+            "\n"+ motherboard +
+            "OS: " + os +
+            "\nWeight: " + weightInKg +
+            "kg\n";
     }
 }

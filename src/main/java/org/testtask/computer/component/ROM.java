@@ -8,7 +8,6 @@ import lombok.Getter;
 import lombok.ToString;
 
 @Getter
-@ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class ROM extends Component {
     private final String type;
@@ -27,4 +26,11 @@ public class ROM extends Component {
         this.capacityInGb = capacityInGb;
     }
 
+    @Override public String toString() {
+        return super.toString() +
+            "type: " + type + ", " +
+            "reading speed: " + readingSpeedInMBpS + "Mb/s, " +
+            "writing speed: " + writingSpeedInMBpS + "Mb/s, "+
+            "capacity " + capacityInGb + "Gb";
+    }
 }
